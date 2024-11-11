@@ -15,11 +15,15 @@ Second image is in dark mode.
 
 
 ![image](https://github.com/user-attachments/assets/96062aed-7b11-4304-b25b-77fa2d7f7787)
+![image](https://github.com/user-attachments/assets/c1012639-8273-4de5-a43f-cf4c3d989759)
+
 This in about page 
 I add all my skills in this section.
 I also video in background instead of plane images to look different.
 
 ![image](https://github.com/user-attachments/assets/52fea81a-1ab4-4758-8b8f-a175684d265b)
+![Uploading image.png…]()
+
 This is portfolio page
 I add my other projects in this section
 by clicking on it you can take a look of my other projects
