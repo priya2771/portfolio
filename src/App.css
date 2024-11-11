@@ -1,0 +1,301 @@
+/**
+* CSS file to hold styles that apply across the application
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background-color: #f7f4f4;
+  --foreground-color: #6957b1;
+  --primary-text-color: #0c0c0c;
+  --secondory-text-color: #f7f4f4;
+  --toggle-bg: #f6e178;
+  --toggle-fg: #a99003;
+  --header: rgba(238, 165, 165, 0.89);
+  --hover: #0d4f6d;
+  --footer: #4e567e;
+}
+[data-theme="dark"] {
+  --background-color: #040404;
+  --foreground-color: #d8d7da;
+  --primary-text-color: #fcfafa;
+  --secondory-text-color: #0c0c0c;
+  --toggle-bg: #8065f6;
+  --toggle-fg: #030366;
+  --header: rgba(115, 13, 13, 0.89);
+  --hover: #a3dcee;
+  --footer: #7e4e7a;
+}
+
+div#main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+section {
+  position: relative;
+  width: 100vw;
+}
+
+section.min-height {
+  min-height: 100vh;
+}
+
+section.padding {
+  padding: 3rem 0;
+}
+
+.background {
+  height: 100%;
+  left: 50%;
+  object-fit: cover;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, 0);
+  width: 100vmax;
+  z-index: -1;
+  padding-top: 10px;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 7rem;
+  font-weight: 500;
+  line-height: 0.8;
+  margin: 0;
+}
+h1::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+h1:hover::before {
+  transform: scaleX(2);
+  transform-origin: bottom left;
+}
+
+h1::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: hsl(200 100% 80%);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 0.6rem;
+}
+#portfolio h2,
+#about h2,
+ul {
+  font-size: 4rem;
+  font-weight: 400;
+  color: var(--primary-text-color);
+}
+.about {
+  background-color: var(--background-color);
+}
+#portfolio {
+  background-color: var(--background-color);
+}
+.container .box h3,
+p {
+  color: var(--secondory-text-color);
+  font-weight: 100px;
+}
+#about p {
+  color: var(--primary-text-color);
+}
+h3 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin: 0;
+}
+#home {
+  position: sticky;
+  top: 0;
+  z-index: -1;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+p.large {
+  font-size: 24px;
+}
+
+p.small {
+  font-size: 15px;
+}
+
+hr {
+  margin: 2.5rem;
+}
+
+li {
+  line-height: 1.7;
+}
+
+li::marker {
+  color: #4e567e;
+}
+#footer {
+  background-color: var(--footer);
+}
+
+a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  padding: 8px;
+}
+#header {
+  background-color: var(--header);
+}
+
+#header a:hover,
+.active {
+  color: var(--hover);
+  font-weight: bolder;
+
+  /* text-decoration: underline;
+  text-underline-offset: 0.7rem; */
+  background-color: var(--background-color);
+  padding: 8px;
+  border-radius: 15px 0px;
+}
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 330px 300px;
+}
+
+.container .box {
+  border-radius: 10px;
+  border: 1px solid rgb(204, 204, 204);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+img.socialIcon {
+  height: 30px;
+  width: 30px;
+}
+.box {
+  background-color: var(--foreground-color);
+  transition: all 0.2s ease-in-out;
+  animation: appear linear;
+  animation-timeline: port();
+  animation-range: entry cover;
+}
+.box:hover {
+  background-color: var(--hover);
+  translate: 0px -10px;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX((0px));
+  }
+}
+.pimg {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.port {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+ul {
+  text-align: left;
+  columns: 2;
+  font-size: 1.25rem;
+  margin: 2rem 3rem;
+  gap: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .background {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
+  #home {
+    min-height: 50vh;
+  }
+  p.large {
+    font-size: 14px;
+  }
+  ul {
+    columns: 1;
+    width: 50%;
+    font-size: 1rem;
+  }
+  p {
+    font-size: 14px;
+  }
+  .port {
+    display: block;
+  }
+  .pimg {
+    max-width: 100%;
+    height: auto;
+  }
+  .container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 430px;
+    padding-top: 10px;
+  }
+}
