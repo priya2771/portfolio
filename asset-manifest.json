@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Assignment/static/css/main.cd39da8a.css",
+    "main.js": "/Assignment/static/js/main.48c1335c.js",
+    "static/js/453.acca0757.chunk.js": "/Assignment/static/js/453.acca0757.chunk.js",
+    "static/media/bg.mp4": "/Assignment/static/media/bg.7e9ddb95cad061422690.mp4",
+    "static/media/instagram.svg": "/Assignment/static/media/instagram.318e6df2752736d3c45c33aed816ef9f.svg",
+    "static/media/github.svg": "/Assignment/static/media/github.4bc72f28e79178cdc9c76db0b22c501e.svg",
+    "static/media/devdotto.svg": "/Assignment/static/media/devdotto.0ff9f0d7b8ce0b5aa62e2f733495d83b.svg",
+    "index.html": "/Assignment/index.html",
+    "static/media/linkedin.svg": "/Assignment/static/media/linkedin.36bd4fb37078da2bbffc9b70a0acc872.svg",
+    "static/media/twitter.svg": "/Assignment/static/media/twitter.9fc479687bd8af1d4abc8a1fce7dc568.svg",
+    "static/media/youtube.svg": "/Assignment/static/media/youtube.f5a3fbc126791c9789e222f96fca742f.svg",
+    "static/media/medium.svg": "/Assignment/static/media/medium.a73cd7178cc078152fd9eb34bd74f5ac.svg",
+    "static/media/down-arrow.svg": "/Assignment/static/media/down-arrow.91079b27aa77759d539380d0c831ab87.svg",
+    "static/media/envelope.svg": "/Assignment/static/media/envelope.33857507a5ba83c373a8c7d5f0d0c948.svg",
+    "main.cd39da8a.css.map": "/Assignment/static/css/main.cd39da8a.css.map",
+    "main.48c1335c.js.map": "/Assignment/static/js/main.48c1335c.js.map",
+    "453.acca0757.chunk.js.map": "/Assignment/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd39da8a.css",
+    "static/js/main.48c1335c.js"
+  ]
+}
