@@ -22,7 +22,8 @@ I add all my skills in this section.
 I also video in background instead of plane images to look different.
 
 ![image](https://github.com/user-attachments/assets/52fea81a-1ab4-4758-8b8f-a175684d265b)
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/73b4e111-07e9-4494-a201-fafcb9122632)
+
 
 This is portfolio page
 I add my other projects in this section
@@ -30,6 +31,8 @@ by clicking on it you can take a look of my other projects
 I add hover effects to card to look creative.
 
 ![image](https://github.com/user-attachments/assets/8af003e8-de06-4fad-a1ec-a310f701db01)
+![image](https://github.com/user-attachments/assets/1be8006e-989d-4987-a0b8-9951b8b837af)
+
 This Is footer of website
 I use it as contact page
 by clicking on icons you can connect with me.
