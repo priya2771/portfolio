@@ -34,3 +34,13 @@
 .toggle:checked + label::after {
   transform: translateX(100%);
 }
+@media only screen and (max-width: 400px) {
+  .toggle-container {
+    z-index: 11;
+    position: fixed;
+    right: 1em;
+  }
+  .toggle + label {
+    font-size: 1.1rem;
+  }
+}

@@ -10,7 +10,7 @@ const toggle = ({ handleChange, isChecked }) => {
         onChange={handleChange}
         checked={isChecked}
       />
-      <label htmlFor="check"> Mode</label>
+      <label htmlFor="check"></label>
     </div>
   );
 };

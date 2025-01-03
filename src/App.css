@@ -44,6 +44,18 @@ div#main {
   width: 100vw;
 }
 
+#header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  padding: 1rem;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
 section {
   position: relative;
   width: 100vw;
@@ -112,6 +124,7 @@ h2 {
   margin: 0;
   padding-top: 0.6rem;
 }
+
 #portfolio h2,
 #about h2,
 ul {
@@ -241,9 +254,7 @@ img.socialIcon {
   width: 100%;
   object-fit: cover;
   border-radius: 20px;
-  box-shadow:
-    0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .port {
   display: flex;
@@ -258,12 +269,29 @@ ul {
   margin: 2rem 3rem;
   gap: 3rem;
 }
+p {
+  padding: 1rem 3rem 0;
+}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   h1 {
     font-size: 4rem;
   }
-  h2 {
+  hr {
+    margin: 6px;
+  }
+
+  #header {
+    position: fixed;
+    display: flex;
+    justify-content: start;
+    gap: 0;
+    padding: 1rem;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  #about h2 {
     font-size: 1.5rem;
   }
   .background {
@@ -279,11 +307,12 @@ ul {
   }
   ul {
     columns: 1;
-    width: 50%;
+    margin: 0;
     font-size: 1rem;
   }
   p {
     font-size: 14px;
+    padding: 0;
   }
   .port {
     display: block;
@@ -295,7 +324,7 @@ ul {
   .container {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 430px;
+    grid-template-columns: 320px;
     padding-top: 10px;
   }
 }

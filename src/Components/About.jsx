@@ -58,6 +58,7 @@ const About = () => {
           padding: "4rem",
           margin: "3rem auto",
           textAlign: "center",
+          height: "10%",
         }}
       >
         <h2>About Myself</h2>
@@ -69,7 +70,7 @@ const About = () => {
           ))}
         </ul>
         <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+        <p>{detailOrQuote}</p>
       </div>
     </section>
   );

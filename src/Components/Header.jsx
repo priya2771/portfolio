@@ -8,20 +8,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div
-      id="header"
-      style={{
-        position: "fixed",
-        display: "flex",
-        justifyContent: "center",
-        gap: "2rem",
-
-        padding: "1rem",
-        top: 0,
-        width: "100%",
-        zIndex: 10,
-      }}
-    >
+    <div id="header">
       <a className="active" href="#home">
         Home
       </a>
